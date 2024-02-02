@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dice Game</title>
+    
+    <!--   Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    
+    <!--   CSS  -->
+    <link rel="stylesheet" href="../dice/css/style.css">
+</head>
+<body class="bg-dark">
+    <!-- Contenitore principale -->
+    <div class="container-fluid ">
+        <!-- Titolo principale -->
+        <h1 class="text-center text-uppercase mt-3">Dice Game</h1>
+
+        <!-- Riga con due colonne per il giocatore e il computer -->
+        <div class="row justify-content-around p-4">
+            <!-- Colonna del giocatore -->
+            <div class="col-md-6 col-lg-4 mb-4">
+                <div class="text-center">
+                    <!-- Sottotitolo per il giocatore -->
+                    <h3 class="text-uppercase">Player</h3>
+                    <!-- Immagine del giocatore -->
+                    <span class=" d-block mx-auto">
+                        <img src="../dice/js/img/dado-1.jpg" width="200px" id="img-player" class="img-fluid" alt="">
+                    </span>
+                    <!-- Risultato del giocatore -->
+                    <h1 id="result-player" class=" mt-2"></h1>
+                </div>
+            </div>
+
+            <!-- Colonna del computer -->
+            <div class="col-md-6 col-lg-4 mb-4 ">
+                <div class="text-center">
+                    <!-- Sottotitolo per il computer -->
+                    <h3 class="text-uppercase">Computer</h3>
+                    <!-- Immagine del computer -->
+                    <span class=" d-block mx-auto">
+                        <img src="../dice/js/img/dado-1.jpg"  width="200px" id="img-computer" class="img-fluid" alt="">
+                    </span>
+                    <!-- Risultato del computer -->
+                    <h1 id="result-computer" class=""></h1>
+                </div>
+                <!-- Contenitore per il risultato del pareggio -->
+                <div class="container-fluid">
+                    <!-- Risultato del pareggio -->
+                    <h1 id="result-draw" class="  text-center  text-danger"></h1>
+                </div>
+            </div>
+        </div>
+
+        <!-- Pulsante per lanciare i dadi -->
+        <div class="text-center">
+            <input id="input-roll" type="button" class="btn btn-primary" value="Roll Dice">
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="../dice/js/script.js"></script>
+</body>
+</html>
