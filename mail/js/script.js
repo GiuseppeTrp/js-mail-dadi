@@ -1,49 +1,60 @@
-const userEmail = prompt(" la tua email");
+const userEmail = 'sam@gimail.com';
 
 const emailArray = [
-    'alice@example.com',
-    'bob@example.com',
-    'charlie@example.com',
-    'david@example.com',
-    'emma@example.com',
-    'frank@example.com',
-    'grace@example.com',
-    'henry@example.com',
-    'isabel@example.com',
-    'jack@example.com',
-    'kate@example.com',
-    'leo@example.com',
-    'maya@example.com',
-    'nathan@example.com',
-    'olivia@example.com',
-    'peter@example.com',
-    'quinn@example.com',
-    'rachel@example.com',
-    'sam@example.com',
-    'tara@example.com',
-    'ulysses@example.com',
-    'violet@example.com',
-    'winston@example.com',
-    'xena@example.com',
-    'yuri@example.com',
-    'zara@example.com',
-    'adam@example.com',
-    'bella@example.com',
-    'carter@example.com',
-    'daisy@example.com',
-    'elijah@example.com',
-    'fiona@example.com',
-    'gavin@example.com',
-    'hannah@example.com',
-    'ian@example.com',
-    'jenna@example.com',
-    'kevin@example.com',
-    'lily@example.com',
-    'mason@example.com',
-    'nora@example.com',
-    'oliver@example.com',
-    'pam@example.com'
+    'alice@gimail.com',
+    'bob@gimail.com',
+    'charlie@gimail.com',
+    'david@gimail.com',
+    'emma@gimail.com',
+    'frank@gimail.com',
+    'grace@gimail.com',
+    'henry@gimail.com',
+    'isabel@gimail.com',
+    'jack@gimail.com',
+    'kate@gimail.com',
+    'leo@gimail.com',
+    'maya@gimail.com',
+    'nathan@gimail.com',
+    'olivia@gimail.com',
+    'peter@gimail.com',
+    'quinn@gimail.com',
+    'rachel@gimail.com',
+    'sam@gimail.com',
+    'tara@gimail.com',
+    'ulysses@gimail.com',
+    'violet@gimail.com',
+    'winston@gimail.com',
+    'xena@gimail.com',
+    'yuri@gimail.com',
+    'zara@gimail.com',
+    'adam@gimail.com',
+    'bella@gimail.com',
+    'carter@gimail.com',
+    'daisy@gimail.com',
+    'elijah@gimail.com',
+    'fiona@gimail.com',
+    'gavin@gimail.com',
+    'hannah@gimail.com',
+    'ian@gimail.com',
+    'jenna@gimail.com',
+    'kevin@gimail.com',
+    'lily@gimail.com',
+    'mason@gimail.com',
+    'nora@gimail.com',
+    'oliver@gimail.com',
+    'pam@gimail.com'
   ];
   
-  console.log(emailArray);
-  
+
+let mailFound;
+
+for(let i = 0; i < emailArray.length; i++){
+     if(emailArray[i] == userEmail){
+         mailFound = true;
+         document.getElementById("result").innerHTML =  "la tua mail è presente nel database!"
+     }
+
+    
+    
+}
+
